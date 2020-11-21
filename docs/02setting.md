@@ -43,7 +43,7 @@ network={
 ## touch lcd 설정
 SD 카드 config.txt 아래 내용 추가
 5인치
-!()[/img/IMG_6183.jpg]
+![](/img/IMG_6183.jpg)
 ```
 max_usb_current=1
 hdmi_group=2
@@ -52,7 +52,7 @@ hdmi_cvt 800 480 60 6 0 0 0
 hdmi_drive=1
 ```
 7인치
-!()[/img/IMG_6208.jpg]
+![](/img/IMG_6208.jpg)
 ```
 max_usb_current=1
 hdmi_group=2
