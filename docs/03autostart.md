@@ -76,10 +76,10 @@ $ sudo vi /boot/cmdline.txt
 
 또는 
 
-~~$ xset -display :0.0 -dpms
-$ sudo xset s off         # screen saver off  
+~~$ sudo xset s off         # screen saver off  
 $ sudo xset -dpms         # display power mgmt signaling off  
-$ sudo xset s noblank     # blink screen display off)~~
+$ sudo xset s noblank     # blink screen display off)
+sudo 빼고...~~
 
 또는
 
