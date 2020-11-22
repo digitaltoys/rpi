@@ -74,16 +74,26 @@ $ chmod 755 kiosk
 $ sudo vi /boot/cmdline.txt  
 마지막 줄에 consoleblank=0 추가
 
-또는 
-
-~~$ sudo xset s off         # screen saver off  
-$ sudo xset -dpms         # display power mgmt signaling off  
-$ sudo xset s noblank     # blink screen display off)
-sudo 빼고...~~
-
 또는
 
 $ sudo apt-get install xscreensaver
+
+또는 
+
+~~이번만 모니터 꺼지는 것 방지  
+$ sudo xset s off         # screen saver off  
+$ sudo xset -dpms         # display power mgmt signaling off  
+$ sudo xset s noblank     # blink screen display off)
+sudo 빼고?...~~
+
+또는
+
+- 껐다켜도 꺼지지 않게 만들기  
+$ sudo vi /etc/lightdm/lightdm.conf     # 마지막에 아래 내용 추가  
+```
+[SeatDefaults]
+xserver-command=X -s 0 -dpms
+```
 
 ## 3. xwindow에서 자동실행하기
 $ sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart 
