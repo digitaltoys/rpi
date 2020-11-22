@@ -70,3 +70,13 @@ $ git clone https://github.com/waveshare/LCD-show.git
 $ cd LCD-show/
 $ ./LCD35-HDMI-800x480-show
 ```
+
+- Screen orientation settings
+```
+cd LCD-show/
+./LCD5-show lite 0
+./LCD5-show lite 90
+./LCD5-show lite 180
+./LCD5-show lite 270
+```
+- Install virtual keyboard
