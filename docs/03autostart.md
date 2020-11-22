@@ -71,9 +71,19 @@ fi
 $ chmod 755 kiosk
 ```
 ### 화면보호기 끄기
-$ sudo vi /boot/cmdline.txt
-
+$ sudo vi /boot/cmdline.txt  
 마지막 줄에 consoleblank=0 추가
+
+또는 
+
+~~$ xset -display :0.0 -dpms
+$ sudo xset s off         # screen saver off  
+$ sudo xset -dpms         # display power mgmt signaling off  
+$ sudo xset s noblank     # blink screen display off)~~
+
+또는
+
+$ sudo apt-get install xscreensaver
 
 ## 3. xwindow에서 자동실행하기
 $ sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart 
