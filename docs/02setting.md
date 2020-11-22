@@ -41,7 +41,9 @@ network={
 ```
 
 ## touch lcd 설정
-SD 카드 config.txt 아래 내용 추가
+(https://www.waveshare.com/wiki/5inch_HDMI_LCD)  
+- 해상도 설정
+SD 카드 config.txt 아래 내용 추가  
 5인치
 ![](/img/IMG_6183.jpg)
 ```
@@ -60,4 +62,9 @@ hdmi_mode=87
 hdmi_cvt=1024 600 60 6 0 0 0
 hdmi_drive=1
 hdmi_force_hotplug=1
+
+- 터치 설정
+$ git clone https://github.com/waveshare/LCD-show.git
+$ cd LCD-show/
+$ ./LCD35-HDMI-800x480-show
 ```
