@@ -89,6 +89,7 @@ sudo 빼고?...~~
 또는
 
 - 껐다켜도 꺼지지 않게 만들기  
+
 $ sudo vi /etc/lightdm/lightdm.conf     # 마지막에 아래 내용 추가  
 ```
 [SeatDefaults]
