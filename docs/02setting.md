@@ -62,8 +62,10 @@ hdmi_mode=87
 hdmi_cvt=1024 600 60 6 0 0 0
 hdmi_drive=1
 hdmi_force_hotplug=1
+```
 
 - 터치 설정
+```
 $ git clone https://github.com/waveshare/LCD-show.git
 $ cd LCD-show/
 $ ./LCD35-HDMI-800x480-show
