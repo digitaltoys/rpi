@@ -96,6 +96,13 @@ $ sudo vi /etc/lightdm/lightdm.conf     # 마지막에 아래 내용 추가
 xserver-command=X -s 0 -dpms
 ```
 
+## 마우스 커서 숨기기  
+$ sudo apt-get install unclutter  
+$ sudo nano ~/.config/lxsession/LXDE-pi/autostart  
+```
+@unclutter -idle 0
+```
+
 ## 3. xwindow에서 자동실행하기
 $ sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart 
 ```
